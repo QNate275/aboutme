@@ -1,7 +1,7 @@
 # 个人简历网站
 
 这是一个基于纯静态 HTML 开发的个人简历网站，采用响应式设计，支持在各种设备上良好展示。
-[在线地址](https://ashster-resume.vercel.app/)
+[在线地址]()
 
 ## 技术栈
 
@@ -22,20 +22,24 @@
 本项目使用 Vercel 进行部署：
 
 1. 克隆仓库
+
 ```bash
 git clone [仓库地址]
 ```
 
 2. 本地开发
+
 - 直接在浏览器中打开 `index.html` 文件
 - 或使用 Live Server 等工具启动本地服务器
 
 3. 部署更新
+
 ```bash
 git add .
 git commit -m "更新内容"
 git push
 ```
+
 推送后 Vercel 会自动部署最新版本
 
 ## 项目结构
