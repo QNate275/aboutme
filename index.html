@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <script src="./js/html2canvas.js" defer></script>
+  <script src="./main.js" defer></script>
+  <title>resume</title>
+</head>
+
+<body>
+  <!-- <button id="download"> print </button> -->
+  <div class="block block-column">
+    <h1 id="name">
+      赵圣雅
+    </h1>
+    <div class="contact item margin-top-5">
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-estate" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 21h18"></path>
+            <path d="M19 21v-4"></path>
+            <path d="M19 17a2 2 0 0 0 2 -2v-2a2 2 0 1 0 -4 0v2a2 2 0 0 0 2 2z"></path>
+            <path d="M14 21v-14a3 3 0 0 0 -3 -3h-4a3 3 0 0 0 -3 3v14"></path>
+            <path d="M9 17v4"></path>
+            <path d="M8 13h2"></path>
+            <path d="M8 9h2"></path>
+          </svg>
+        </span>
+        <span class="contact-detail">
+          西南交通大学
+        </span>
+      </div>
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18"></path>
+            <path d="M13 8l2 0"></path>
+            <path d="M13 12l2 0"></path>
+          </svg>
+        </span>
+        <span class="contact-detail">
+          软件工程
+        </span>
+      </div>
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+            </path>
+          </svg>
+        </span>
+        <span class="contact-detail">
+          <a href="https://github.com/Ashster" target="_blank" rel="noopener"> https://github.com/Ashster </a>
+        </span>
+      </div>
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+            <path d="M3 7l9 6l9 -6"></path>
+          </svg>
+        </span>
+        <span class="contact-detail">
+          <a href="mailto:825130866@qq.com"> 825130866@qq.com </a>
+        </span>
+      </div>
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+            </path>
+          </svg>
+        </span>
+        <span class="contact-detail copy-js">
+          13281092776
+        </span>
+      </div>
+      <div class="contact-unit">
+        <span class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-wechat" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16.5 10c3.038 0 5.5 2.015 5.5 4.5c0 1.397 -.778 2.645 -2 3.47l0 2.03l-1.964 -1.178a6.649 6.649 0 0 1 -1.536 .178c-3.038 0 -5.5 -2.015 -5.5 -4.5s2.462 -4.5 5.5 -4.5z">
+            </path>
+            <path
+              d="M11.197 15.698c-.69 .196 -1.43 .302 -2.197 .302a8.008 8.008 0 0 1 -2.612 -.432l-2.388 1.432v-2.801c-1.237 -1.082 -2 -2.564 -2 -4.199c0 -3.314 3.134 -6 7 -6c3.782 0 6.863 2.57 7 5.785l0 .233">
+            </path>
+            <path d="M10 8h.01"></path>
+            <path d="M7 8h.01"></path>
+            <path d="M15 14h.01"></path>
+            <path d="M18 14h.01"></path>
+          </svg>
+        </span>
+        <span class="contact-detail copy-js">
+          mayday825130866
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="block block-column">
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+        <path d="M14.5 5.5l4 4"></path>
+        <path d="M12 8l-5 -5l-4 4l5 5"></path>
+        <path d="M7 8l-1.5 1.5"></path>
+        <path d="M16 12l5 5l-4 4l-5 -5"></path>
+        <path d="M16 17l-1.5 1.5"></path>
+      </svg>
+      技能和语言
+    </h2>
+    <div class="item">
+      <div class="skill-name bold"> 前端基础 </div>
+      <div class="skill-detail">
+        熟练使用 HTML, CSS 开发网页；掌握浏览器, HTTP 等前端领域基础知识
+      </div>
+    </div>
+    <div class="item">
+      <div class="skill-name bold"> Vue </div>
+      <div class="skill-detail">
+        熟练使用 Vue3 & Vue2，能够构建组件或大型项目
+      </div>
+    </div>
+    <div class="item">
+      <div class="skill-name bold"> React </div>
+      <div class="skill-detail">
+        熟悉 React 基本使用，拥有快速学习的能力
+      </div>
+    </div>
+    <div class="item">
+      <div class="skill-name bold"> JavaScript </div>
+      <div class="skill-detail">
+        熟悉 TypeScript； 熟悉基本数据结构与算法
+      </div>
+    </div>
+    <!-- <div class="item">
+      <div class="skill-name bold"> SCSS </div>
+      <div class="skill-detail">
+        熟悉 SCSS 语法，能够使用 SCSS 变量等特性实现换肤效果
+      </div>
+    </div> -->
+    <div class="item">
+      <div class="skill-name bold"> 工程化 </div>
+      <div class="skill-detail">
+        掌握 UI 模块化开发与 CICD 流程；了解 esbuild, Rollup 等构建工具
+      </div>
+    </div>
+    <div class="item">
+      <div class="skill-name bold"> 其他 </div>
+      <div class="skill-detail">
+        对编程富有热情；了解 Figma, Git, Node.js 等基本操作
+      </div>
+    </div>
+  </div>
+  <div class="block block-column">
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+        <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+      </svg>
+      教育背景
+    </h2>
+    <div class="education item margin-top-5">
+      <div class="education-detail bold">西南交通大学·软件工程·本科</div>
+      <div class="education-time time"></div>
+        <span> 2018.09-2022.06 </span>
+      </div>
+    </div>
+  </div>
+  <div class="block block-column">
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="24"
+        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 21l18 0"></path>
+        <path d="M5 21v-14l8 -4v18"></path>
+        <path d="M19 21v-10l-6 -4"></path>
+        <path d="M9 9l0 .01"></path>
+        <path d="M9 12l0 .01"></path>
+        <path d="M9 15l0 .01"></path>
+        <path d="M9 18l0 .01"></path>
+      </svg>
+      工作经历
+    </h2>
+    <div>
+      <div class="work-header">
+        <span class="company-name-postion">
+          <div>
+            <span class="bold"> 腾讯科技（深圳）有限公司 </span>
+            ·
+            <span> 前端开发工程师 </span>
+          </div>
+        </span>
+        <span class="time">
+          实习 2021.07-2021.09, 正式 2022.06-至今
+        </span>
+      </div>
+      <!-- <div class="work-header">
+        <span class="company-name-postion">
+        </span>
+        <span class="time">
+          实习 2021.07-2021.09
+        </span>
+      </div> -->
+      <div class="work-content">
+        <div class="work-header">
+          <span class="bold"> Chat Vue UIKit 聊天组件库 </span>
+        </div>
+        <ul>
+          <li>技术栈：Vue3, Vue2, Uniapp, SCSS, TypeScript, pnpm, WebSocket </li>
+          <li>+ 设计全新 2.0 TUIKit 组件，包含 Chat、ConversationList 等多个业务组件，客户多倍增长 </li>
+          <li>+ 一套代码同时支持 Vue2 & Vue3，支持 Uniapp </li>
+          <li>+ 采用 pnpm + monorepo 管理项目，支持多包发布测试 </li>
+          <li>+ 抽离 js 公共逻辑数据层，供多框架复用 </li>
+          <li><a href="https://trtc.io/document/50061?platform=web&product=chat&menulabel=uikit">项目主页</a> ·
+            <a href="https://github.com/TencentCloud/chat-uikit-vue.git">项目仓库</a> ·
+            <a href="https://www.npmjs.com/package/@tencentcloud/chat-uikit-vue">NPM</a>
+          </li>
+        </ul>
+      </div>
+      <div class="work-content">
+        <div class="work-header">
+          <span class="bold"> Chat React UIKit 聊天组件库 </span>
+        </div>
+        <ul>
+          <li>技术栈：React, SCSS, TypeScript, pnpm, WebSocket </li>
+          <li>+ 组件化建设，制定统一规范，推动产品从源码到组件库升级 </li>
+          <li>+ 工程化建设，构建自动化流水线、CICD、数据上报等</li>
+          <li>+ 支持多语言，换肤，AI markdown，流式输出, 富文本输入等关键特性 </li>
+          <li><a href="https://trtc.io/document/50061?platform=web&product=chat&menulabel=uikit">项目主页</a> ·
+            <a href="https://github.com/TencentCloud/chat-uikit-react.git">项目仓库</a> ·
+            <a href="https://www.npmjs.com/package/@tencentcloud/chat-uikit-react">NPM</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="block block-column">
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lego" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M9.5 11l.01 0"></path>
+        <path d="M14.5 11l.01 0"></path>
+        <path d="M9.5 15a3.5 3.5 0 0 0 5 0"></path>
+        <path d="M7 5h1v-2h8v2h1a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3v1h-10v-1a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3"></path>
+      </svg>
+      个人项目
+    </h2>
+    <div>
+      <div class="work-header">
+        <span class="company-name-postion">
+          <div>
+            <span class="bold"> 2048 小游戏 </span>
+          </div>
+          <span> 技术栈：JavaScript, HTML, CSS </span>
+        </span>
+        <span class="time">
+          2021.01-2021.02
+        </span>
+      </div>
+      <div class="work-content">
+        <ul>
+          <li>+ <a href="https://github.com/Ashster/2048" target="_blank" rel="noopener noreferrer"> github </a> · <a
+            href="https://ashster.github.io/2048/" target="_blank" rel="noopener noreferrer"> try online </a>
+        </ul>
+      </div>
+      <div class="work-header">
+        <span class="company-name-postion">
+          <div>
+            <span class="bold"> 壁纸生成器 </span>
+          </div>
+          <span> 技术栈：JavaScript, HTML, CSS, Canvas </span>
+        </span>
+        <span class="time">
+         2024.05-2024.06
+        </span>
+      </div>
+      <div class="work-content">
+        <ul>
+          <li>+ <a href="https://github.com/Ashster/dynamic-wallpaper" target="_blank" rel="noopener noreferrer"> github </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="awards-block">
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0"></path>
+        <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889"></path>
+        <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889"></path>
+      </svg>
+      荣誉奖项
+    </h2>
+    <ul>
+      <li>2024 年腾讯云音视频Pass业务攻坚项目团队·年度业务突破奖 </li>
+      <li>2023 腾讯 Outstanding Contributor </li>
+      <li>2022 年腾讯云音视频Pass业务攻坚项目团队·年度业务突破奖 </li>
+      <li>2022 年腾讯办公协同产品突破联合项目团队·年度业务突破奖 </li>
+    </ul>
+  </div>
+</body>
+
+</html>
